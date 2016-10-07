@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+<table id="cartTable">
+    <thead>
+        <tr>
+            <th><label><input class="check-all check" type="checkbox"/>&nbsp;Check All</label></th>
+            <th>Items</th>
+            <th>Single Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>Operate</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
+            <td class="goods"><img src="images/1.jpg" alt=""/><span>Casio/Casio EX-TR350</span></td>
+            <td class="price">5999.88</td>
+            <td class="count">
+                <span class="reduce"></span>
+                <input class="count-input" type="text" value="1"/>
+                <span class="add">+</span></td>
+            <td class="subtotal">5999.88</td>
+            <td class="operation"><span class="delete">Delete</span></td>
+        </tr>
+        <tr>
+            <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
+            <td class="goods"><img src="images/2.jpg" alt=""/><span>Canon PowerShot SX50 HS</span></td>
+            <td class="price">3888.50</td>
+            <td class="count"><span class="reduce"></span><input class="count-input" type="text" value="1"/><span class="add">+</span></td>
+            <td class="subtotal">3888.50</td>
+            <td class="operation"><span class="delete">Delete</span></td>
+        </tr>
+        <tr>
+            <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
+            <td class="goods"><img src="images/3.jpg" alt=""/><span>Sony DSC-WX300</span></td>
+            <td class="price">1428.50</td>
+            <td class="count"><span class="reduce"></span><input class="count-input" type="text" value="1"/><span class="add">+</span></td>
+            <td class="subtotal">1428.50</td>
+            <td class="operation"><span class="delete">Delete</span></td>
+        </tr>
+        <tr>
+            <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
+            <td class="goods"><img src="images/4.jpg" alt=""/><span>Fujifilm instax mini 25</span></td>
+            <td class="price">640.60</td>
+            <td class="count"><span class="reduce"></span><input class="count-input" type="text" value="1"/><span class="add">+</span></td>
+            <td class="subtotal">640.60</td>
+            <td class="operation"><span class="delete">Delete</span></td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="foot" id="foot">
+    <label class="fl select-all"><input type="checkbox" class="check-all check"/>&nbsp;Check All</label>
+    <a class="fl delete" id="deleteAll" href="javascript:;">Delete</a>
+    <div class="fr closing">Check Out</div>
+    <div class="fr total">Total：￥<span id="priceTotal">0.00</span></div>
+    <div class="fr selected" id="selected">Selected Items
+        <span id="selectedTotal">0</span>件
+        <span class="arrow up">︽</span>
+        <span class="arrow down">︾</span>
+    </div>
+    <div class="selected-view">
+        <div id="selectedViewList" class="clearfix">
+            <!--<div><img src="images/1.jpg"><span>取消选择</span></div>-->
+        </div>
+        <span class="arrow">◆<span>◆</span></span>
+    </div>
+</div>
+</body>
+</html>
